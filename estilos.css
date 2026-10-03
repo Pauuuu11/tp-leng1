@@ -237,3 +237,29 @@ footer a {
   color: var(--color-accent);
 }
 
+.Lunar {
+  padding: 2px 3px;
+  margin-top: 1rem;
+  color: rgba(9, 0, 49, 0.541);
+  text-decoration: solid;
+  font-weight:bold;
+}
+
+.Lunar-Acantilado {
+  color: rgba(9, 0, 49, 0.541);
+  text-decoration: solid;
+  font-weight:bold;
+}
+.Acant {
+  float:left ;
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  width: 30rem;
+}
+.Text-Acant {
+  text-align: center;
+  background-color: #0f172a;
+  color: #38bdf8;
+  font-size: 1.4rem;
+}
