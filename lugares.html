@@ -1,100 +1,115 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lugares</title>
-    <link rel="stylesheet" href="estilos.css">
-  </head>
-  <body>
-    <header>
-      <h1>Lugares</h1>
-      <nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lugares</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="pagina-lugares" aria-label="Navegación Principal">
+  <header id="Lugares">
+    <h1>Descubre Lunaria</h1>
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="ciudad.html">Ciudad</a></li>
+        <li><a href="lugares.html">Lugares</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Lugares de Interés</h2>
+      <p>
+        Lunaria reúne el mar, los acantilados y el bosque en un paisaje que forma
+        parte de su historia desde la llegada de los primeros navegantes en 1817.
+        Hoy, sus lugares de interés permiten conocer ese pasado ligado a la pesca
+        y la navegación, disfrutar de la naturaleza y descubrir por qué la ciudad
+        promueve un turismo que cuida sus paisajes.
+      </p>
+      <nav class="menu-secciones" aria-label="Navegación Local">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="ciudad.html">Ciudad</a></li>
-          <li><a href="lugares.html">Lugares</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="#playa">Playa de los Navegantes</a></li>
+          <li><a href="#faro">Faro de Lunaria</a></li>
+          <li><a href="#bosque">Bosque de la Luna</a></li>
         </ul>
       </nav>
-    </header>
 
-    <main>
-      <section>
-        <h2>Lugares de interés</h2>
-        <p>
-          Lunaria combina mar, bosque y montañas en un mismo paisaje. Sus
-          lugares más visitados ofrecen experiencias distintas: descanso,
-          aventura, historia y cultura.
-        </p>
-      </section>
-
-      <section>
+      <article id="playa">
         <h3>Playa de los Navegantes</h3>
+        <img src="imgs-lugares/PlayaLunaria.png" alt="Vista de la Playa de los Navegantes" width="600" height="400">
+        <p>
+          La Playa de los Navegantes es una de las postales más reconocidas de
+          Lunaria. Su arena dorada y sus vistas al océano recuerdan la relación
+          que la ciudad mantiene con el mar desde sus comienzos, cuando la pesca
+          era la principal actividad de sus habitantes. Es un lugar elegido para
+          caminar junto a la costa, descansar y disfrutar del paisaje.
+        </p>
         <ul>
+          <li><strong>Ubicación:</strong> zona costera norte.</li>
+          <li><strong>Actividades:</strong> nadar, caminar y practicar surf.</li>
           <li>
-            <strong>Descripción:</strong> Es la playa más conocida de Lunaria,
-            con arenas doradas y una vista panorámica del océano.
-          </li>
-          <li>
-            <strong>Ubicación:</strong> Zona costera norte de la ciudad, cerca
-            del puerto.
-          </li>
-          <li>
-            <strong>Qué se puede hacer:</strong> caminar por la orilla, nadar,
-            practicar surf y disfrutar de atardeceres junto al mar.
-          </li>
-          <li>
-            <strong>¿Por qué visitarla?:</strong> Porque es el lugar ideal para
-            relajarse y sentir la esencia costera de la ciudad.
+            <strong>Horario de visita:</strong> Todos los días, de
+            <time datetime="09:00">09:00</time> a
+            <time datetime="18:00">18:00</time>.
           </li>
         </ul>
+      </article>
 
+      <article id="faro">
         <h3>Faro de Lunaria</h3>
+        <img src="imgs-lugares/FaroLunaria.png" alt="Faro de Lunaria" width="600" height="400">
+        <p>
+          Inaugurado en 1898, el Faro de Lunaria se construyó para orientar a los
+          barcos y reducir los accidentes causados por los acantilados de la costa.
+          Su torre de piedra se convirtió en uno de los principales símbolos de la
+          ciudad y todavía guía a los navegantes. Desde sus alrededores, los
+          visitantes pueden contemplar el océano y la costa.
+        </p>
         <ul>
+          <li><strong>Ubicación:</strong> acantilado sur.</li>
+          <li><strong>Actividades:</strong> tours guiados y fotografía.</li>
           <li>
-            <strong>Descripción:</strong> Un faro emblemático construido sobre
-            los acantilados, símbolo histórico de la ciudad.
-          </li>
-          <li>
-            <strong>Ubicación:</strong> En los acantilados del extremo sur de
-            Lunaria.
-          </li>
-          <li>
-            <strong>Qué se puede hacer:</strong> recorrer la zona, observar el
-            mar desde el mirador y conocer la historia del faro.
-          </li>
-          <li>
-            <strong>¿Por qué visitarla?:</strong> Porque ofrece vistas
-            impresionantes y representa uno de los hitos más importantes de la
-            ciudad.
+            <strong>Horario de visita:</strong> Todos los días, de
+            <time datetime="10:00">10:00</time> a
+            <time datetime="17:00">17:00</time>.
           </li>
         </ul>
+      </article>
 
+      <article id="bosque">
         <h3>Bosque de la Luna</h3>
+        <img src="imgs-lugares/BosqueLunaria.png" alt="Bosque de la Luna" width="600" height="400">
+        <p>
+          El Bosque de la Luna es una reserva natural que protege parte del bosque
+          original de Lunaria. Sus árboles y su vegetación fueron importantes para
+          los primeros habitantes, que aprovecharon los recursos del lugar para
+          construir viviendas y obtener alimentos y plantas medicinales. También
+          es conocido por la luz de la luna que, según la historia de la ciudad,
+          iluminó sus hojas durante la noche en que llegaron los navegantes.
+          Actualmente, sus senderos permiten recorrer el entorno y observar la
+          naturaleza con cuidado.
+        </p>
         <ul>
+          <li><strong>Ubicación:</strong> zona montañosa del este.</li>
+          <li><strong>Actividades:</strong> senderismo, observación de aves y fotografía.</li>
           <li>
-            <strong>Descripción:</strong> Un enorme bosque que se extiende junto
-            a la costa y está rodeado por una atmósfera misteriosa y relajante.
-          </li>
-          <li>
-            <strong>Ubicación:</strong> A las afueras de la ciudad, entre las
-            montañas y la costa.
-          </li>
-          <li>
-            <strong>Qué se puede hacer:</strong> senderismo, recorridos guiados,
-            fotos de paisaje y actividades nocturnas con luz de luna.
-          </li>
-          <li>
-            <strong>¿Por qué visitarla?:</strong> Porque es una experiencia
-            única donde la naturaleza y la historia de Lunaria se encuentran.
+            <strong>Horario de visita:</strong> Todos los días, de
+            <time datetime="08:00">08:00</time> a
+            <time datetime="18:00">18:00</time>.
           </li>
         </ul>
-      </section>
-    </main>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <a href="#Lugares">Ir Arriba</a>
+    <p>© 2026 - Ciudad de Lunaria - Todos los derechos reservados</p>
+  </footer>
+</body>
 
-    <footer>
-      <p>© 2026 - Ciudad de Lunaria - Todos los derechos reservados</p>
-    </footer>
-  </body>
 </html>

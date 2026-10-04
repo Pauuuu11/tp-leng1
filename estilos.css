@@ -263,3 +263,41 @@ footer a {
   color: #38bdf8;
   font-size: 1.4rem;
 }
+
+/*AJUSTES PARA LUGARES*/
+/*Separa el menú del texto anterior*/
+.pagina-lugares .menu-secciones {
+  background-color: var(--color-secondary);
+  box-shadow: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+/*Quita el estilo de tarjeta de la lista del menú*/
+.pagina-lugares .menu-secciones ul {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+/*Elimina el espacio extra entre enlaces*/
+.pagina-lugares .menu-secciones li {
+  margin-bottom: 0;
+}
+
+/*Integra la lista de datos en la ficha*/
+.pagina-lugares article ul {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/*Da formato y espacio a cada dato*/
+.pagina-lugares article li {
+  background-color: var(--color-card-bg);
+  padding: 0 1.5rem 0.25rem;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  margin-bottom: 0.25rem;
+}
