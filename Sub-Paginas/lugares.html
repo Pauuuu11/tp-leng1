@@ -5,26 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lugares</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="../Css-Y-java/estilos.css">
 </head>
 
 <body class="pagina-lugares" aria-label="Navegación Principal">
   <header id="Lugares">
-    <h1>Descubre Lunaria</h1>
-    <nav class="menu-principal">
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="ciudad.html">Ciudad</a></li>
-        <li><a href="lugares.html">Lugares</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark menu-principal">
+      <div class="container-fluid">
+        <h1 class="mb-0"><a class="navbar-brand" href="#Lugares">Descubre Lunaria</a></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLugares"
+          aria-controls="navbarLugares" aria-expanded="false" aria-label="Abrir o cerrar menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarLugares">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="lugares.html">Lugares</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main>
     <section>
       <h2>Lugares de Interés</h2>
-      <p>
+      <p class="introduccion-lugares">
         Lunaria reúne el mar, los acantilados y el bosque en un paisaje que forma
         parte de su historia desde la llegada de los primeros navegantes en 1817.
         Hoy, sus lugares de interés permiten conocer ese pasado ligado a la pesca
@@ -36,80 +48,232 @@
           <li><a href="#playa">Playa de los Navegantes</a></li>
           <li><a href="#faro">Faro de Lunaria</a></li>
           <li><a href="#bosque">Bosque de la Luna</a></li>
+          <li><a href="#festividades">Festividades</a></li>
         </ul>
       </nav>
 
-      <article id="playa">
-        <h3>Playa de los Navegantes</h3>
-        <img src="../Imagenes/imgs-lugares/PlayaLunaria.png" alt="Vista de la Playa de los Navegantes" width="600" height="400">
-        <p>
-          La Playa de los Navegantes es una de las postales más reconocidas de
-          Lunaria. Su arena dorada y sus vistas al océano recuerdan la relación
-          que la ciudad mantiene con el mar desde sus comienzos, cuando la pesca
-          era la principal actividad de sus habitantes. Es un lugar elegido para
-          caminar junto a la costa, descansar y disfrutar del paisaje.
-        </p>
-        <ul>
-          <li><strong>Ubicación:</strong> zona costera norte.</li>
-          <li><strong>Actividades:</strong> nadar, caminar y practicar surf.</li>
-          <li>
-            <strong>Horario de visita:</strong> Todos los días, de
-            <time datetime="09:00">09:00</time> a
-            <time datetime="18:00">18:00</time>.
-          </li>
-        </ul>
-      </article>
+      <div class="container-fluid px-0">
+        <div class="row g-4">
+          <div class="col-12">
+            <article id="playa" class="card h-100">
+              <img class="card-img-top" src="../Imagenes/imgs-lugares/PlayaLunaria.png"
+                alt="Vista de la Playa de los Navegantes" width="600" height="400">
+              <div class="card-body">
+                <h3 class="card-title">Playa de los Navegantes</h3>
+                <p class="card-text">
+                  La Playa de los Navegantes es una de las postales más reconocidas de
+                  Lunaria. Su arena dorada y sus vistas al océano recuerdan la relación
+                  que la ciudad mantiene con el mar desde sus comienzos, cuando la pesca
+                  era la principal actividad de sus habitantes. Es un lugar elegido para
+                  caminar junto a la costa, descansar y disfrutar del paisaje.
+                </p>
+                <div class="accordion" id="datosPlaya">
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="tituloUbicacionPlaya">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#ubicacionPlaya" aria-expanded="false" aria-controls="ubicacionPlaya">
+                        Ubicación
+                      </button>
+                    </h4>
+                    <div id="ubicacionPlaya" class="accordion-collapse collapse" aria-labelledby="tituloUbicacionPlaya"
+                      data-bs-parent="#datosPlaya">
+                      <div class="accordion-body">Zona costera norte.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="tituloActividadesPlaya">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#actividadesPlaya" aria-expanded="false" aria-controls="actividadesPlaya">
+                        Actividades
+                      </button>
+                    </h4>
+                    <div id="actividadesPlaya" class="accordion-collapse collapse" aria-labelledby="tituloActividadesPlaya"
+                      data-bs-parent="#datosPlaya">
+                      <div class="accordion-body">Nadar, caminar y practicar surf.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="tituloHorarioPlaya">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#horarioPlaya" aria-expanded="false" aria-controls="horarioPlaya">
+                        Horario de visita
+                      </button>
+                    </h4>
+                    <div id="horarioPlaya" class="accordion-collapse collapse" aria-labelledby="tituloHorarioPlaya"
+                      data-bs-parent="#datosPlaya">
+                      <div class="accordion-body">
+                        Todos los días, de <time datetime="09:00">09:00</time> a
+                        <time datetime="18:00">18:00</time>.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
 
-      <article id="faro">
-        <h3>Faro de Lunaria</h3>
-        <img src="../Imagenes/imgs-lugares/FaroLunaria.png" alt="Faro de Lunaria" width="600" height="400">
-        <p>
-          Inaugurado en 1898, el Faro de Lunaria se construyó para orientar a los
-          barcos y reducir los accidentes causados por los acantilados de la costa.
-          Su torre de piedra se convirtió en uno de los principales símbolos de la
-          ciudad y todavía guía a los navegantes. Desde sus alrededores, los
-          visitantes pueden contemplar el océano y la costa.
-        </p>
-        <ul>
-          <li><strong>Ubicación:</strong> acantilado sur.</li>
-          <li><strong>Actividades:</strong> tours guiados y fotografía.</li>
-          <li>
-            <strong>Horario de visita:</strong> Todos los días, de
-            <time datetime="10:00">10:00</time> a
-            <time datetime="17:00">17:00</time>.
-          </li>
-        </ul>
-      </article>
+          <div class="col-12">
+            <article id="faro" class="card h-100">
+              <img class="card-img-top" src="../Imagenes/imgs-lugares/FaroLunaria.png" alt="Faro de Lunaria"
+                width="600" height="400">
+              <div class="card-body">
+                <h3 class="card-title">Faro de Lunaria</h3>
+                <p class="card-text">
+                  Inaugurado en 1898, el Faro de Lunaria se construyó para orientar a los
+                  barcos y reducir los accidentes causados por los acantilados de la costa.
+                  Su torre de piedra se convirtió en uno de los principales símbolos de la
+                  ciudad y todavía guía a los navegantes. Desde sus alrededores, los
+                  visitantes pueden contemplar el océano y la costa.
+                </p>
+                <div class="accordion" id="datosFaro">
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="tituloUbicacionFaro">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#ubicacionFaro" aria-expanded="false" aria-controls="ubicacionFaro">
+                        Ubicación
+                      </button>
+                    </h4>
+                    <div id="ubicacionFaro" class="accordion-collapse collapse" aria-labelledby="tituloUbicacionFaro"
+                      data-bs-parent="#datosFaro">
+                      <div class="accordion-body">Acantilado sur.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="tituloActividadesFaro">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#actividadesFaro" aria-expanded="false" aria-controls="actividadesFaro">
+                        Actividades
+                      </button>
+                    </h4>
+                    <div id="actividadesFaro" class="accordion-collapse collapse" aria-labelledby="tituloActividadesFaro"
+                      data-bs-parent="#datosFaro">
+                      <div class="accordion-body">Tours guiados y fotografía.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="tituloHorarioFaro">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#horarioFaro" aria-expanded="false" aria-controls="horarioFaro">
+                        Horario de visita
+                      </button>
+                    </h4>
+                    <div id="horarioFaro" class="accordion-collapse collapse" aria-labelledby="tituloHorarioFaro"
+                      data-bs-parent="#datosFaro">
+                      <div class="accordion-body">
+                        Todos los días, de <time datetime="10:00">10:00</time> a
+                        <time datetime="17:00">17:00</time>.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
 
-      <article id="bosque">
-        <h3>Bosque de la Luna</h3>
-        <img src="../Imagenes/imgs-lugares/BosqueLunaria.png" alt="Bosque de la Luna" width="600" height="400">
-        <p>
-          El Bosque de la Luna es una reserva natural que protege parte del bosque
-          original de Lunaria. Sus árboles y su vegetación fueron importantes para
-          los primeros habitantes, que aprovecharon los recursos del lugar para
-          construir viviendas y obtener alimentos y plantas medicinales. También
-          es conocido por la luz de la luna que, según la historia de la ciudad,
-          iluminó sus hojas durante la noche en que llegaron los navegantes.
-          Actualmente, sus senderos permiten recorrer el entorno y observar la
-          naturaleza con cuidado.
-        </p>
-        <ul>
-          <li><strong>Ubicación:</strong> zona montañosa del este.</li>
-          <li><strong>Actividades:</strong> senderismo, observación de aves y fotografía.</li>
-          <li>
-            <strong>Horario de visita:</strong> Todos los días, de
-            <time datetime="08:00">08:00</time> a
-            <time datetime="18:00">18:00</time>.
-          </li>
-        </ul>
-      </article>
+          <div class="col-12">
+            <article id="bosque" class="card h-100">
+              <img class="card-img-top" src="../Imagenes/imgs-lugares/BosqueLunaria.png" alt="Bosque de la Luna"
+                width="600" height="400">
+              <div class="card-body">
+                <h3 class="card-title">Bosque de la Luna</h3>
+                <p class="card-text">
+                  El Bosque de la Luna es una reserva natural que protege parte del bosque
+                  original de Lunaria. Sus árboles y su vegetación fueron importantes para
+                  los primeros habitantes, que aprovecharon los recursos del lugar para
+                  construir viviendas y obtener alimentos y plantas medicinales. También
+                  es conocido por la luz de la luna que, según la historia de la ciudad,
+                  iluminó sus hojas durante la noche en que llegaron los navegantes.
+                  Actualmente, sus senderos permiten recorrer el entorno y observar la
+                  naturaleza con cuidado.
+                </p>
+                <div class="accordion" id="datosBosque">
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="tituloUbicacionBosque">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#ubicacionBosque" aria-expanded="false" aria-controls="ubicacionBosque">
+                        Ubicación
+                      </button>
+                    </h4>
+                    <div id="ubicacionBosque" class="accordion-collapse collapse"
+                      aria-labelledby="tituloUbicacionBosque" data-bs-parent="#datosBosque">
+                      <div class="accordion-body">Zona montañosa del este.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="tituloActividadesBosque">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#actividadesBosque" aria-expanded="false" aria-controls="actividadesBosque">
+                        Actividades
+                      </button>
+                    </h4>
+                    <div id="actividadesBosque" class="accordion-collapse collapse"
+                      aria-labelledby="tituloActividadesBosque" data-bs-parent="#datosBosque">
+                      <div class="accordion-body">Senderismo, observación de aves y fotografía.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="tituloHorarioBosque">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#horarioBosque" aria-expanded="false" aria-controls="horarioBosque">
+                        Horario de visita
+                      </button>
+                    </h4>
+                    <div id="horarioBosque" class="accordion-collapse collapse"
+                      aria-labelledby="tituloHorarioBosque" data-bs-parent="#datosBosque">
+                      <div class="accordion-body">
+                        Todos los días, de <time datetime="08:00">08:00</time> a
+                        <time datetime="18:00">18:00</time>.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <section id="festividades" class="festividades-lunaria" aria-labelledby="titulo-festividades">
+        <h3 id="titulo-festividades">Festividades y atracciones</h3>
+        <div class="festividades-tarjetas">
+          <article class="festividad-card">
+            <h4>Baile de las Doncellas de la Luna</h4>
+            <p><strong>Cuándo:</strong> última noche de luna llena del año.</p>
+            <p>
+              Una danza tradicional en la que, vestidas de blanco, las participantes
+              despiden la Luna y recuerdan sus orígenes junto al mar.
+            </p>
+            <p><strong>Para disfrutar:</strong> danza, encuentro familiar y tradición.</p>
+          </article>
+          <article class="festividad-card">
+            <h4>Baile de los Varones del Mar</h4>
+            <p><strong>Cuándo:</strong> primera noche de luna llena del año.</p>
+            <p>
+              Una celebración que da la bienvenida a la Luna y homenajea la historia
+              marinera de Lunaria con vals y baile compartido.
+            </p>
+            <p><strong>Para disfrutar:</strong> música, baile y cultura local.</p>
+          </article>
+          <article class="festividad-card">
+            <h4>Festival de la Luna</h4>
+            <p><strong>Cuándo:</strong> primer fin de semana de enero. <strong>Duración:</strong> cinco días.</p>
+            <p>
+              El evento principal de la ciudad reúne conciertos, desfiles, gastronomía,
+              deportes, artistas locales y un espectáculo final de luces.
+            </p>
+            <p><strong>Para disfrutar:</strong> cultura y actividades para todos los gustos.</p>
+          </article>
+        </div>
+      </section>
     </section>
   </main>
   <footer>
     <a href="#Lugares">Ir Arriba</a>
     <p>© 2026 - Ciudad de Lunaria - Todos los derechos reservados</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
