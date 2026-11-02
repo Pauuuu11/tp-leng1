@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,6 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia de Lunaria</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- CSS propio -->
     <link rel="stylesheet" href="../Css-Y-java/estilos.css">
 </head>
 
@@ -14,286 +21,305 @@
         <h1>Lunaria</h1>
         <p><em>Donde el mar encuentra la luna</em></p>
         <img src="../Imagenes/img_ciudad/f1.jpg"
-            alt="Costa de Lunaria con acantilados y el mar">
+             alt="Costa de Lunaria con acantilados y el mar">
     </header>
 
-    <nav>
-        <a href="../index.html">Inicio</a>
-        <a href="ciudad.html">Historia</a>
-        <a href="lugares.html">Lugares</a>
-        <a href="contacto.html">Contacto</a>
+    <!-- Navegación con Bootstrap -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark px-3 py-2">
+        <a class="navbar-brand" href="../index.html">Lunaria</a>
+
+        <div class="navbar-nav">
+            <a class="nav-link" href="../index.html">Inicio</a>
+            <a class="nav-link active" href="ciudad.html">Historia</a>
+            <a class="nav-link" href="lugares.html">Lugares</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
+        </div>
     </nav>
 
-    <main>
+    <!-- Contenido principal -->
+    <main class="container py-4">
 
-        <section>
-            <h2>Historia de Lunaria</h2>
+        <div class="row g-4">
 
-            <article>
-                <h3>Los orígenes de Lunaria</h3>
+            <!-- Historia de la ciudad -->
+            <section class="col-12 col-lg-8">
 
-                <p>
-                    La ciudad de <strong>Lunaria</strong> se encuentra ubicada en la costa
-                    sur del continente, entre imponentes acantilados, un extenso bosque
-                    de árboles centenarios y una bahía de aguas tranquilas. Su privilegiada
-                    ubicación permitió que, desde sus orígenes, fuera un punto de encuentro
-                    entre viajeros, comerciantes y exploradores.
-                </p>
+                <h2>Historia de Lunaria</h2>
 
-                <img src="../Imagenes/img_ciudad/f2.jpg"
-                    alt="Bahía de Lunaria rodeada de formaciones rocosas">
-            
-                <p>
-                    La historia de Lunaria comenzó en el año <strong>1817</strong>, cuando
-                    un grupo de navegantes, liderados por el capitán
-                    <strong>Elías Montenegro</strong>, quedó atrapado durante una fuerte
-                    tormenta en el océano. Durante varios días las embarcaciones fueron
-                    arrastradas por el viento hasta que finalmente encontraron una pequeña
-                    bahía protegida por enormes formaciones rocosas.
-                </p>
+                <article>
+                    <h3>Los orígenes de Lunaria</h3>
 
-                <p>
-                    Aquella misma noche ocurrió un fenómeno que marcaría el destino de los
-                    exploradores. La luna llena iluminó el bosque cercano con una intensidad
-                    nunca antes vista. La luz se reflejaba sobre las hojas plateadas de
-                    ciertos árboles nativos, haciendo que todo el paisaje pareciera brillar.
-                </p>
+                    <p>
+                        La ciudad de <strong>Lunaria</strong> se encuentra ubicada en la costa
+                        sur del continente, entre imponentes acantilados, un extenso bosque
+                        de árboles centenarios y una bahía de aguas tranquilas. Su privilegiada
+                        ubicación permitió que, desde sus orígenes, fuera un punto de encuentro
+                        entre viajeros, comerciantes y exploradores.
+                    </p>
 
-                <p>
-                    Los marineros interpretaron aquella imagen como una <em>señal de esperanza</em>
-                    luego de sobrevivir a la tormenta y decidieron establecer allí un
-                    pequeño asentamiento, al que llamaron <strong>Lunaria</strong>, en honor
-                    a la luna que les había mostrado un lugar seguro donde comenzar una
-                    nueva vida.
-                </p>
-            
-            </article>
-            <article>
-                <h3>Línea de tiempo histórica</h3>
-                <ol>
-                    <li><strong>1817:</strong> Llegada de la expedición del capitán Elías Montenegro y fundación del asentamiento.</li>
-                    <li><strong>Segunda mitad del siglo XIX:</strong> Expansión de la pesca y el comercio marítimo local.</li>
-                    <li><strong>1898:</strong> Inauguración del Faro de Lunaria en la zona de los acantilados.</li>
-                    <li><strong>Principios del siglo XX:</strong> Declaración del Bosque de la Luna como reserva natural y desarrollo cultural.</li>
-                </ol>
-            </article>
+                    <img src="../Imagenes/img_ciudad/f2.jpg"
+                         alt="Bahía de Lunaria rodeada de formaciones rocosas">
 
-            <article>
-                <h3>Los primeros habitantes</h3>
+                    <p>
+                        La historia de Lunaria comenzó en el año <strong>1817</strong>, cuando
+                        un grupo de navegantes, liderados por el capitán
+                        <strong>Elías Montenegro</strong>, quedó atrapado durante una fuerte
+                        tormenta en el océano. Durante varios días las embarcaciones fueron
+                        arrastradas por el viento hasta que finalmente encontraron una pequeña
+                        bahía protegida por enormes formaciones rocosas.
+                    </p>
 
-                <p>
-                    Los primeros años fueron difíciles. Los habitantes construyeron
-                    viviendas de madera utilizando árboles caídos por el viento y aprendieron
-                    a aprovechar los recursos naturales del lugar.
-                </p>
+                    <p>
+                        Aquella misma noche ocurrió un fenómeno que marcaría el destino de los
+                        exploradores. La luna llena iluminó el bosque cercano con una intensidad
+                        nunca antes vista. La luz se reflejaba sobre las hojas plateadas de
+                        ciertos árboles nativos, haciendo que todo el paisaje pareciera brillar.
+                    </p>
 
-                <p>
-                    La pesca fue su principal actividad económica, mientras que el bosque
-                    les proporcionaba alimentos, plantas medicinales y materiales para
-                    fabricar herramientas y embarcaciones.
-                </p>
+                    <p>
+                        Los marineros interpretaron aquella imagen como una
+                        <em>señal de esperanza</em> luego de sobrevivir a la tormenta y decidieron
+                        establecer allí un pequeño asentamiento, al que llamaron
+                        <strong>Lunaria</strong>, en honor a la luna que les había mostrado
+                        un lugar seguro donde comenzar una nueva vida.
+                    </p>
+                </article>
 
-                <p>
-                    Con el paso del tiempo comenzaron a llegar nuevas familias atraídas por
-                    la fertilidad de las tierras y la tranquilidad de la bahía. Así nacieron
-                    los primeros barrios y se construyó una pequeña plaza alrededor de la
-                    cual funcionaban una iglesia, un mercado y una escuela.
-                </p>
+                <article>
+                    <h3>Línea de tiempo histórica</h3>
 
-                <p>
-                    Poco a poco, Lunaria dejó de ser un simple pueblo pesquero para
-                    convertirse en una ciudad en crecimiento.
-                </p>
-            </article>
+                    <ol>
+                        <li>
+                            <strong>1817:</strong> Llegada de la expedición del capitán
+                            Elías Montenegro y fundación del asentamiento.
+                        </li>
+                        <li>
+                            <strong>Segunda mitad del siglo XIX:</strong> Expansión de la
+                            pesca y el comercio marítimo local.
+                        </li>
+                        <li>
+                            <strong>1898:</strong> Inauguración del Faro de Lunaria en la
+                            zona de los acantilados.
+                        </li>
+                        <li>
+                            <strong>Principios del siglo XX:</strong> Declaración del Bosque
+                            de la Luna como reserva natural y desarrollo cultural.
+                        </li>
+                    </ol>
+                </article>
 
+                <article>
+                    <h3>Los primeros habitantes</h3>
 
-            <article>
-                <h3>La construcción del Faro de Lunaria</h3>
+                    <p>
+                        Los primeros años fueron difíciles. Los habitantes construyeron
+                        viviendas de madera utilizando árboles caídos por el viento y
+                        aprendieron a aprovechar los recursos naturales del lugar.
+                    </p>
 
-                <p>
-                    Durante la segunda mitad del siglo XIX el comercio marítimo aumentó
-                    considerablemente. Sin embargo, los peligrosos acantilados provocaban
-                    frecuentes accidentes de navegación.
-                </p>
+                    <p>
+                        La pesca fue su principal actividad económica, mientras que el bosque
+                        les proporcionaba alimentos, plantas medicinales y materiales para
+                        fabricar herramientas y embarcaciones.
+                    </p>
 
-                <img src="../Imagenes/img_ciudad/f3.jpg" 
-                    alt="Faro ubicado sobre los acantilados de Lunaria">
+                    <p>
+                        Con el paso del tiempo comenzaron a llegar nuevas familias atraídas
+                        por la fertilidad de las tierras y la tranquilidad de la bahía.
+                        Así nacieron los primeros barrios y se construyó una pequeña plaza
+                        alrededor de la cual funcionaban una iglesia, un mercado y una escuela.
+                    </p>
 
-                <p>
-                    Por ese motivo, en <strong>1898</strong> se inauguró el
-                    <strong>Faro de Lunaria</strong>, una torre de piedra de más de cuarenta
-                    metros de altura cuya luz podía observarse a varios kilómetros de
-                    distancia.
-                </p>
+                    <p>
+                        Poco a poco, Lunaria dejó de ser un simple pueblo pesquero para
+                        convertirse en una ciudad en crecimiento.
+                    </p>
+                </article>
 
-                <p>
-                    La construcción del faro redujo drásticamente los naufragios y se
-                    convirtió en el mayor símbolo de la ciudad. Actualmente continúa
-                    funcionando y recibe miles de visitantes cada año.
-                </p>
-            </article>
+                <article>
+                    <h3>La construcción del Faro de Lunaria</h3>
 
+                    <p>
+                        Durante la segunda mitad del siglo XIX el comercio marítimo aumentó
+                        considerablemente. Sin embargo, los peligrosos acantilados provocaban
+                        frecuentes accidentes de navegación.
+                    </p>
 
-            <article>
-                <h3>El crecimiento de la ciudad</h3>
+                    <img src="../Imagenes/img_ciudad/f3.jpg"
+                         alt="Faro ubicado sobre los acantilados de Lunaria">
 
-                <p>
-                    A principios del siglo XX, Lunaria experimentó un importante desarrollo
-                    económico. Se construyeron caminos, un puerto comercial, un teatro
-                    municipal, una biblioteca y un paseo costero.
-                </p>
+                    <p>
+                        Por ese motivo, en <strong>1898</strong> se inauguró el
+                        <strong>Faro de Lunaria</strong>, una torre de piedra de más de
+                        cuarenta metros de altura cuya luz podía observarse a varios
+                        kilómetros de distancia.
+                    </p>
 
-                <img src="../Imagenes/img_ciudad/f4.jpg" 
-                    alt="Bosque natural de Lunaria">
+                    <p>
+                        La construcción del faro redujo drásticamente los naufragios y se
+                        convirtió en el mayor símbolo de la ciudad. Actualmente continúa
+                        funcionando y recibe miles de visitantes cada año.
+                    </p>
+                </article>
 
-                <p>
-                    Al mismo tiempo, las autoridades locales decidieron proteger gran parte
-                    del bosque original para evitar su destrucción, convirtiéndolo en una
-                    reserva natural conocida como el <strong>Bosque de la Luna</strong>.
-                </p>
-            </article>
+                <article>
+                    <h3>El crecimiento de la ciudad</h3>
 
+                    <p>
+                        A principios del siglo XX, Lunaria experimentó un importante
+                        desarrollo económico. Se construyeron caminos, un puerto comercial,
+                        un teatro municipal, una biblioteca y un paseo costero.
+                    </p>
 
-            <article>
-                <h3>Lunaria y la cultura</h3>
+                    <img src="../Imagenes/img_ciudad/f4.jpg"
+                         alt="Bosque natural de Lunaria">
 
-                <p>
-                    Con el correr de las décadas, la ciudad comenzó a destacarse por su
-                    compromiso con el arte y la cultura. Pintores, músicos y escritores
-                    encontraron inspiración en sus paisajes, lo que dio origen a numerosos
-                    festivales, exposiciones y espectáculos que aún forman parte de la
-                    identidad de Lunaria.
-                </p>
+                    <p>
+                        Al mismo tiempo, las autoridades locales decidieron proteger gran
+                        parte del bosque original para evitar su destrucción, convirtiéndolo
+                        en una reserva natural conocida como el
+                        <strong>Bosque de la Luna</strong>.
+                    </p>
+                </article>
 
-                <p>
-                    Muchos habitantes sostienen que la tranquilidad del bosque y el sonido
-                    constante del mar despiertan la creatividad de quienes la visitan.
-                </p>
-            </article>
+                <article>
+                    <h3>Lunaria y la cultura</h3>
 
+                    <p>
+                        Con el correr de las décadas, la ciudad comenzó a destacarse por su
+                        compromiso con el arte y la cultura. Pintores, músicos y escritores
+                        encontraron inspiración en sus paisajes, lo que dio origen a numerosos
+                        festivales, exposiciones y espectáculos que aún forman parte de la
+                        identidad de Lunaria.
+                    </p>
 
-            <article>
-                <h3>La leyenda del Árbol de la Primera Luz</h3>
+                    <p>
+                        Muchos habitantes sostienen que la tranquilidad del bosque y el sonido
+                        constante del mar despiertan la creatividad de quienes la visitan.
+                    </p>
+                </article>
 
-                <p>
-                    Entre las tradiciones más importantes se encuentra la leyenda del
-                    <strong>Árbol de la Primera Luz</strong>.
-                </p>
+                <article>
+                    <h3>La leyenda del Árbol de la Primera Luz</h3>
 
-                <p>
-                    Según cuentan los antiguos pobladores, el árbol más viejo del bosque
-                    fue el primero en reflejar la luz de aquella luna que guio a los
-                    exploradores hasta la bahía.
-                </p>
+                    <p>
+                        Entre las tradiciones más importantes se encuentra la leyenda del
+                        <strong>Árbol de la Primera Luz</strong>.
+                    </p>
 
-                <p>
-                    La tradición dice que quienes colocan una cinta blanca en sus ramas
-                    y piden un deseo regresarán algún día a Lunaria para verlo cumplido.
-                </p>
+                    <p>
+                        Según cuentan los antiguos pobladores, el árbol más viejo del bosque
+                        fue el primero en reflejar la luz de aquella luna que guio a los
+                        exploradores hasta la bahía.
+                    </p>
 
-                <p>
-                    Aunque no existen pruebas de esta historia, la leyenda sigue
-                    transmitiéndose de generación en generación y forma parte del
-                    patrimonio cultural de la ciudad.
-                </p>
-            </article>
+                    <p>
+                        La tradición dice que quienes colocan una cinta blanca en sus ramas
+                        y piden un deseo regresarán algún día a Lunaria para verlo cumplido.
+                    </p>
 
+                    <p>
+                        Aunque no existen pruebas de esta historia, la leyenda sigue
+                        transmitiéndose de generación en generación y forma parte del
+                        patrimonio cultural de la ciudad.
+                    </p>
+                </article>
 
-            <article>
-                <h3>El Festival de la Luna</h3>
+                <article>
+                    <h3>El Festival de la Luna</h3>
 
-                <p>
-                    Cada año, durante el primer fin de semana de enero, la ciudad celebra
-                    el <strong>Festival de la Luna</strong>, el evento más importante
-                    de Lunaria.
-                </p>
+                    <p>
+                        Cada año, durante el primer fin de semana de enero, la ciudad celebra
+                        el <strong>Festival de la Luna</strong>, el evento más importante
+                        de Lunaria.
+                    </p>
 
-                <img src="../Imagenes/img_ciudad/f5.jpg"   
-                     alt="Costa de Lunaria durante el Festival de la Luna">
-                
-                <p>
-                    Durante cinco días se realizan conciertos, desfiles, ferias
-                    gastronómicas, competencias deportivas, exposiciones de artistas
-                    locales y un espectáculo de luces que ilumina el faro, el bosque
-                    y la costa.
-                </p>
+                    <img src="../Imagenes/img_ciudad/f5.jpg"
+                         alt="Costa de Lunaria durante el Festival de la Luna">
 
-                <p>
-                    Miles de turistas llegan desde distintos lugares para participar de
-                    esta celebración, considerada el mayor atractivo turístico de la región.
-                </p>
-            </article>
+                    <p>
+                        Durante cinco días se realizan conciertos, desfiles, ferias
+                        gastronómicas, competencias deportivas, exposiciones de artistas
+                        locales y un espectáculo de luces que ilumina el faro, el bosque
+                        y la costa.
+                    </p>
 
+                    <p>
+                        Miles de turistas llegan desde distintos lugares para participar
+                        de esta celebración, considerada el mayor atractivo turístico
+                        de la región.
+                    </p>
+                </article>
 
-            <article>
-                <h3>Lunaria en la actualidad</h3>
+                <article>
+                    <h3>Lunaria en la actualidad</h3>
 
-                <p>
-                    Actualmente, Lunaria cuenta con aproximadamente
-                    <strong>85.000 habitantes</strong> y es reconocida por su excelente
-                    calidad de vida, su respeto por el medio ambiente y su equilibrio
-                    entre modernidad y naturaleza.
-                </p>
+                    <p>
+                        Actualmente, Lunaria cuenta con aproximadamente
+                        <strong>85.000 habitantes</strong> y es reconocida por su excelente
+                        calidad de vida, su respeto por el medio ambiente y su equilibrio
+                        entre modernidad y naturaleza.
+                    </p>
 
-                <p>
-                    La ciudad apuesta por el turismo sustentable, promoviendo actividades
-                    como el senderismo, los paseos en bicicleta, la observación de aves,
-                    la navegación y las visitas guiadas a sus edificios históricos.
-                </p>
+                    <p>
+                        La ciudad apuesta por el turismo sustentable, promoviendo actividades
+                        como el senderismo, los paseos en bicicleta, la observación de aves,
+                        la navegación y las visitas guiadas a sus edificios históricos.
+                    </p>
 
-                <p>
-                    Hoy, quienes llegan a Lunaria descubren una ciudad que conserva con
-                    orgullo sus raíces, protege sus paisajes naturales y mantiene vivas
-                    las historias de sus primeros habitantes.
-                </p>
+                    <p>
+                        Hoy, quienes llegan a Lunaria descubren una ciudad que conserva con
+                        orgullo sus raíces, protege sus paisajes naturales y mantiene vivas
+                        las historias de sus primeros habitantes.
+                    </p>
 
-                <p>
-                    Sus calles, plazas y monumentos recuerdan el largo camino recorrido
-                    desde aquel pequeño asentamiento de navegantes hasta convertirse en
-                    uno de los destinos turísticos más importantes de la región.
-                </p>
-            </article>
+                    <p>
+                        Sus calles, plazas y monumentos recuerdan el largo camino recorrido
+                        desde aquel pequeño asentamiento de navegantes hasta convertirse en
+                        uno de los destinos turísticos más importantes de la región.
+                    </p>
+                </article>
 
-        </section>
+            </section>
 
+            <!-- Datos de la ciudad -->
+            <aside class="col-12 col-lg-4">
 
-        <aside>
+                <h2>Datos de Lunaria</h2>
 
-            <h2>Datos de Lunaria</h2>
-            <dl>
-                <dt>Año de fundación:</dt>
-                <dd>1817</dd>
+                <dl>
+                    <dt>Año de fundación:</dt>
+                    <dd>1817</dd>
 
-                <dt>Población:</dt>
-                <dd>85.000 habitantes</dd>
+                    <dt>Población:</dt>
+                    <dd>85.000 habitantes</dd>
 
-                <dt>Ubicación:</dt>
-                <dd>Costa sur del continente</dd>
+                    <dt>Ubicación:</dt>
+                    <dd>Costa sur del continente</dd>
 
-                <dt>Principal actividad:</dt>
-                <dd>Turismo</dd>
+                    <dt>Principal actividad:</dt>
+                    <dd>Turismo</dd>
 
-                <dt>Lugar más emblemático:</dt>
-                <dd>Faro de Lunaria</dd>
+                    <dt>Lugar más emblemático:</dt>
+                    <dd>Faro de Lunaria</dd>
 
-                <dt>Reserva natural:</dt>
-                <dd>Bosque de la Luna</dd>
+                    <dt>Reserva natural:</dt>
+                    <dd>Bosque de la Luna</dd>
 
-                <dt>Evento principal:</dt>
-                <dd>Festival de la Luna</dd>
-            </dl>
+                    <dt>Evento principal:</dt>
+                    <dd>Festival de la Luna</dd>
+                </dl>
 
-        </aside>
+            </aside>
+
+        </div>
 
     </main>
 
-
     <footer>
-
         <address>
             Lunaria - Ciudad de mar, bosque y cultura.
         </address>
-
     </footer>
 
 </body>
