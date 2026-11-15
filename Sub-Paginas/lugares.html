@@ -9,7 +9,7 @@
     rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="../Css-Y-java/estilos.css">
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body class="pagina-lugares" aria-label="Navegación Principal">
@@ -22,12 +22,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarLugares">
-          <ul class="navbar-nav ms-auto" >
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="lugares.html">Lugares</a></li>
             <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           </ul>
+          <button id="botonTema" class="boton-tema" type="button" aria-label="Activar modo oscuro" aria-pressed="false">
+            <span aria-hidden="true">☾</span>
+          </button>
         </div>
       </div>
     </nav>
@@ -56,7 +59,7 @@
         <div class="row g-4">
           <div class="col-12">
             <article id="playa" class="card h-100">
-              <img class="card-img-top" src="../Imagenes/imgs-lugares/PlayaLunaria.png"
+              <img class="card-img-top" src="../imgs/imgs-lugares/PlayaLunaria.png"
                 alt="Vista de la Playa de los Navegantes" width="600" height="400">
               <div class="card-body">
                 <h3 class="card-title">Playa de los Navegantes</h3>
@@ -122,7 +125,7 @@
 
           <div class="col-12">
             <article id="faro" class="card h-100">
-              <img class="card-img-top" src="../Imagenes/imgs-lugares/FaroLunaria.png" alt="Faro de Lunaria" width="600"
+              <img class="card-img-top" src="../imgs/imgs-lugares/FaroLunaria.png" alt="Faro de Lunaria" width="600"
                 height="400">
               <div class="card-body">
                 <h3 class="card-title">Faro de Lunaria</h3>
@@ -189,7 +192,7 @@
 
           <div class="col-12">
             <article id="bosque" class="card h-100">
-              <img class="card-img-top" src="../Imagenes/imgs-lugares/BosqueLunaria.png" alt="Bosque de la Luna"
+              <img class="card-img-top" src="../imgs/imgs-lugares/BosqueLunaria.png" alt="Bosque de la Luna"
                 width="600" height="400">
               <div class="card-body">
                 <h3 class="card-title">Bosque de la Luna</h3>
@@ -262,7 +265,7 @@
         <h2 id="titulo-festividades">Festividades Destacadas</h2>
         <div class="festividades-tarjetas">
           <article class="card festividad-card h-100">
-            <img class="card-img-top" src="../Imagenes/imgs-lugares/DoncellasDeLaLuna.jpg"
+            <img class="card-img-top" src="../imgs/imgs-lugares/DoncellasDeLaLuna.jpg"
               alt="Celebración del Baile de las Doncellas de la Luna">
             <div class="card-body">
               <h4 class="card-title">Baile de las Doncellas de la Luna</h4>
@@ -279,7 +282,7 @@
             </div>
           </article>
           <article class="card festividad-card h-100">
-            <img class="card-img-top" src="../Imagenes/imgs-lugares/VaronesDelMar.jpg"
+            <img class="card-img-top" src="../imgs/imgs-lugares/VaronesDelMar.jpg"
               alt="Celebración del Baile de los Varones del Mar">
             <div class="card-body">
               <h4 class="card-title">Baile de los Varones del Mar</h4>
@@ -296,7 +299,7 @@
             </div>
           </article>
           <article class="card festividad-card h-100">
-            <img class="card-img-top" src="../Imagenes/imgs-lugares/EspectaculoLuces.jpg"
+            <img class="card-img-top" src="../imgs/imgs-lugares/EspectaculoLuces.jpg"
               alt="Espectáculo de luces del Festival de la Luna">
             <div class="card-body">
               <h4 class="card-title">Festival de la Luna</h4>
@@ -318,12 +321,14 @@
     </section>
   </main>
   <footer>
+    <p>Oficina de Turismo de Lunaria</p>
+    <p></p>© 2026 - Todos los derechos reservados</p>
     <a href="#Lugares">Ir Arriba</a>
-    <p>© 2026 - Ciudad de Lunaria - Todos los derechos reservados</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>
