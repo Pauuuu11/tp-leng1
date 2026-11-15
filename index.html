@@ -9,21 +9,14 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="Css-Y-java/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <header id="Menú">
-        <h1>Ciudad Lunaria: La ciudad donde el Mar encuentra la Luna.</h1>
-        <p><em>Un lugar perfecto para vivir o visitar</em></p>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLugares"
-          aria-controls="navbarLugares" aria-expanded="false" aria-label="Abrir o cerrar menú">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <header id="Inicio">
         <nav class="navbar navbar-expand-lg navbar-dark menu-principal">
             <div class="container-fluid">
-
-                <a class="navbar-brand" href="#Lugares">Descubre Lunaria</a>
+                <h1 class="mb-0"><a class="navbar-brand" href="#Inicio">Descubre Lunaria</a></h1>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLugares"
                     aria-controls="navbarLugares" aria-expanded="false" aria-label="Abrir o cerrar menú">
@@ -32,24 +25,28 @@
 
                 <div class="collapse navbar-collapse" id="navbarLugares">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="Sub-Paginas/ciudad.html">Ciudad</a></li>
                         <li class="nav-item"><a class="nav-link" href="Sub-Paginas/lugares.html">Lugares</a></li>
                         <li class="nav-item"><a class="nav-link" href="Sub-Paginas/contacto.html">Contacto</a></li>
                     </ul>
+                    <button id="botonTema" class="boton-tema" type="button" aria-label="Activar modo oscuro"
+                        aria-pressed="false">
+                        <span aria-hidden="true">☾</span>
+                    </button>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <article>
-            <header>
-                <h2>Descripción General </h2>
-            </header>
+        <section aria-labelledby="presentacion-lunaria">
+            <h2 id="presentacion-lunaria">Ciudad Lunaria: La ciudad donde el Mar encuentra la Luna.</h2>
+            <p><strong><em>Un lugar perfecto para vivir o visitar</em></strong></p>
             <p class="Lunar">
                 Lunaria es una ciudad ubicada en la costa sur de Argentina, entre San Bernardo y San Clemente, contando
                 con todo tipo de ambientes que pueden ver en nuestro apartado de <b><a
-                        href="lugares.html">Lugares</a></b>
+                        href="Sub-Paginas/lugares.html">Lugares</a></b>
                 Desde nuestro enorme bosque y centro histórico, donde conservamos antiguos edificios en el mejor estado
                 posible, a nuestro centro lleno de todo tipo de restaurantes, cafés, y espacios
                 dedicados al arte y la la cultura. Hay algo para todos, desde los más grandes a los más chicos. <br>
@@ -63,93 +60,90 @@
                 contando con muchas chicas llamadas Selene, por ejemplo, y varios varones con nombres como Orion, Leo,
                 etc.
             </p>
-        </article>
-        <div class="card">
-            <div class="card-header">
-                <h4>Curiosidades de Lunaria</h4>
-            </div>
-            <div class="card-body">
-                <ul>
-                    <li>
-                        <b>Es la segunda ciudad costera más concurrida durante las vacaciones de verano</b>
-                    </li>
-                    <br>
-                    <li>
-                        <b>Según la revista "Una delicia argentina" tiene los mejores restaurantes de la costa </b>
-                    </li>
-                    <br>
-                    <li>
-                        <b>Cuenta con 85.000 habitantes </b>
-                    </li>
-                    <br>
-                    <li>
-                        <b> Cuenta con una gran popularidad entre los cineastas argentinos, contando con numerosas
-                            peliculas de diversos géneros
-                            que fueron grabadas usando a la ciudad como escenario
-                        </b>
-                    </li>
-                    <li>
-                        Incluso durante el invierno los picos de turismo son altos.
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <article class="Lunar-Acantilado">
-            <h3 class="Text-Acant">
-                Acantilado de Lunaria
-            </h3>
-            <div class="Container">
-                <img src="https://static.vecteezy.com/system/resources/previews/070/429/972/non_2x/multicolored-houses-cliff-edge-manarola-italian-village-cinque-terre-liguria-italy-city-architecture-photo.jpg"
-                    alt=" Imagen del famoso Acantilaado de Lunaria ">
-                <p>
-                    El bello acantilado con una de las mejores vistas en toda la argentina, pues según turistas "Es
-                    insuperable lo bella que es la luz de la luna al reflejarse en el mar desde este punto de vista"
-                </p>
-            </div>
+            <section class="card" aria-labelledby="curiosidades-lunaria">
+                <div class="card-header">
+                    <h3 id="curiosidades-lunaria">Curiosidades de Lunaria</h3>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            <b>Es la segunda ciudad costera más concurrida durante las vacaciones de verano</b>
+                        </li>
+                        <li>
+                            <b>Según la revista "Una delicia argentina" tiene los mejores restaurantes de la costa </b>
+                        </li>
+                        <li>
+                            <b>Cuenta con 85.000 habitantes </b>
+                        </li>
+                        <li>
+                            <b> Cuenta con una gran popularidad entre los cineastas argentinos, contando con numerosas
+                                peliculas de diversos géneros
+                                que fueron grabadas usando a la ciudad como escenario
+                            </b>
+                        </li>
+                        <li>
+                            Incluso durante el invierno los picos de turismo son altos.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <section aria-labelledby="lugares-destacados">
+            <h2 id="lugares-destacados">Lugares destacados</h2>
+            <article class="Lunar-Acantilado">
+                <h3 class="Text-Acant">
+                    Acantilado de Lunaria
+                </h3>
+                <div class="Container">
+                    <img src="https://static.vecteezy.com/system/resources/previews/070/429/972/non_2x/multicolored-houses-cliff-edge-manarola-italian-village-cinque-terre-liguria-italy-city-architecture-photo.jpg"
+                        alt=" Imagen del famoso Acantilaado de Lunaria ">
+                    <p>
+                        El bello acantilado con una de las mejores vistas en toda la argentina, pues según turistas "Es
+                        insuperable lo bella que es la luz de la luna al reflejarse en el mar desde este punto de vista"
+                    </p>
+                </div>
 
-        </article>
-        <article>
-            <header>
+            </article>
+            <article>
                 <h3 class="Text-Acant">
                     Bosque de Lunaria
                 </h3>
-            </header>
 
-            <img src="https://i.pinimg.com/736x/0b/df/be/0bdfbeacd5d626e897148b11275f85c2.jpg" alt="Bosque de Lunaria">
+                <img src="https://i.pinimg.com/736x/0b/df/be/0bdfbeacd5d626e897148b11275f85c2.jpg"
+                    alt="Bosque de Lunaria">
 
-            <p>
-                Uno de los lugares más populares de Lunaria, pues debido a la oscuridad que genera el bosque, con tantos
-                árboles, y tan grandes, dan un ambiente muy oscuro, siendo esta la razón por la cual
-                fue utilizado como escenario para la película de terror argentina "El bosque de la Noche del terror"
-            </p>
-        </article>
-        <Div>
-
-        </Div>
-        <article>
-            <header>
+                <p>
+                    Uno de los lugares más populares de Lunaria, pues debido a la oscuridad que genera el bosque, con
+                    tantos
+                    árboles, y tan grandes, dan un ambiente muy oscuro, siendo esta la razón por la cual
+                    fue utilizado como escenario para la película de terror argentina "El bosque de la Noche del terror"
+                </p>
+            </article>
+            <article>
                 <h3 class="Text-Acant">
                     Taller comunitario de arte
                 </h3>
-            </header>
-            <img src="Imagenes/Imagenes_para_Index/ed3a49a0d0e2ac699f387872133c7383.jpg"
-                alt="Foto del taller de arte de la ciudad en un evento de pintura comunitario">
-            <p>
-                En esta ciudad el arte es uno de los campos más valorados, siendo esta la razón por la cual se invita
-                desde los más pequeños hasta los más grandes a acercarse a los talleres de
-                arte comunitarios donde tenemos material de arte, tanto puesto por la ciudad como donado por generosos
-                contribuyentes. Y, a veces, se realizan eventos comunitarios para impulsar la creatividad en grupo
-            </p>
-        </article>
-        <Section>
-            <h2>
+                <img src="imgs/imgs-index/ed3a49a0d0e2ac699f387872133c7383.jpg"
+                    alt="Foto del taller de arte de la ciudad en un evento de pintura comunitario">
+                <p>
+                    En esta ciudad el arte es uno de los campos más valorados, siendo esta la razón por la cual se
+                    invita
+                    desde los más pequeños hasta los más grandes a acercarse a los talleres de
+                    arte comunitarios donde tenemos material de arte, tanto puesto por la ciudad como donado por
+                    generosos
+                    contribuyentes. Y, a veces, se realizan eventos comunitarios para impulsar la creatividad en grupo
+                </p>
+            </article>
+        </section>
+        <section aria-labelledby="eventos-lunaria">
+            <h2 id="eventos-lunaria">
                 Eventos en Lunaria
             </h2>
             <article>
                 <h3>
                     El Bailde de Las Doncellas de La Luna
                 </h3>
-                <img src="Imagenes/Imagenes_para_Index/Baile de las doncellas.jpg"
+                <img src="imgs/imgs-index/Baile de las doncellas.jpg"
                     alt="Imagen de referencia del baile de las Doncellas">
                 <p>
                     Uno de los eventos más pupulares, y más antiguos de Lunaria es el baile de las Doncellas de la Luna.
@@ -180,7 +174,7 @@
                     El Baile de los Varones del Mar
                 </h3>
 
-                <img src="Imagenes/Imagenes_para_Index/Baile de los varones.jpg"
+                <img src="imgs/imgs-index/Baile de los varones.jpg"
                     alt="Imagen de Referencia del Baile de Los Varones del Mar">
                 <p>
                     Este evento nace como un complemento al Bailde de las Doncellas de la Luna, ocurriendo la primera
@@ -204,12 +198,14 @@
         </section>
     </main>
     <footer>
-        <a href="#Menú"> Volver arriba</a>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-            </script>
+        <p>Oficina de Turismo de Lunaria</p>
+        <p></p>© 2026 - Todos los derechos reservados</p>
+        <a href="#Inicio">Ir Arriba</a>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
