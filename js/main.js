@@ -1,4 +1,8 @@
 // Interacción del formulario de Contacto
+/* 
+    Esta función, con las variables, verifica si es que en el formulario de "Motivo de su contacto"
+    Se selecciona la opción "Otro"  Se despligue el campo de texto oculto
+*/
 const selectContacto = document.getElementById('exampleFormControlSelect1');
 
 if (selectContacto) {
@@ -18,6 +22,10 @@ if (selectContacto) {
     });
 }
 
+/*
+    Esta función y la variable botón hará que la página se recargue al momento de presionar el botón "Enviar" debajo del formulario, para simular que se
+    envió el formulario.  
+*/
 const boton = document.getElementById("btn-enviar");
 
 if (boton) {
