@@ -58,3 +58,9 @@ if (btnModoOscuro) {
         );
     });
 }
+
+// Contador de años
+const inicio = 1817; 
+const anioActual = new Date().getFullYear();
+const anios = anioActual - inicio;
+document.getElementById("contador-anios").textContent = `Transcurrieron ${anios} años`;
